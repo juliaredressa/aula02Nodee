@@ -177,7 +177,7 @@ app.use(express.urlencoded({extended: true}));
 //indicando para a aplicação como servir arquivos estaticos localizados na pasta 'paginas'
 app.use(express.static('./paginas'));
 
-app.get('/', (requisicao, resposta) => {
+app.post('/', (requisicao, resposta) => {
     resposta.end(`
             <!DOCTYPE html>
                 <html lang="pt-br">
@@ -193,7 +193,7 @@ app.get('/', (requisicao, resposta) => {
             </html>
     `)
 })
-app.get('/cadastraUsuario.html', (requisicao, resposta) => {
+app.post('/cadastraUsuario.html', (requisicao, resposta) => {
     resposta.end(`
     <!DOCTYPE html>
     <html lang="pt-br">
