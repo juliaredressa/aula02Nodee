@@ -193,7 +193,7 @@ app.get('/', (requisicao, resposta) => {
             </html>
     `)
 })
-app.post('/cadastraUsuario.html', (requisicao, resposta) => {
+app.get('/cadastraUsuario.html', (requisicao, resposta) => {
     resposta.end(`
     <!DOCTYPE html>
     <html lang="pt-br">
