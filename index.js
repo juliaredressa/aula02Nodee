@@ -187,7 +187,7 @@ app.get('/', (requisicao, resposta) => {
             <body>
                 <h1>MENU</h1>
                 <ul>
-                    <li><a href="/cadastraUsuario">Cadastrar produtos</a></li>
+                    <li><a href="/cadastraUsuario.html">Cadastrar produtos</a></li>
                 </ul>
             </body>
             </html>
@@ -205,7 +205,7 @@ app.get('/cadastraUsuario.html', (requisicao, resposta) => {
     </head>
     <body>
         <div class="container">
-            <form action='/cadastraUsuario' method='get' class="row g-3 needs-validation" novalidate>
+            <form action='/cadastraUsuario' method='post' class="row g-3 needs-validation" novalidate>
                 <fieldset class="border p-2">
                 <legend class="mb-3">Cadastro de produtos</legend>
                 <div class="col-md-4">
